@@ -4,11 +4,11 @@ HTTP Rest JSON API to manage foods. Build with Ruby + Ruby on Rails + Postgres +
 
 ## Requirements
 
-Docker Engine and Docker-Compose 
+Docker Engine and Docker-Compose
 
 ## Installation
 
-Deploy the application: 
+Deploy the application:
 
 ```bash
 docker-compose build
@@ -29,7 +29,7 @@ docker-compose rm
 
 ## Usage
 
-Access the service in your localhost, port: 3000. You can use any HTTP client to make the following requests: 
+Access the service in your localhost, port: 3000. You can use any HTTP client to make the following requests:
 
 1. Fetch a single food from the system, given the food ID:
 
@@ -37,52 +37,13 @@ Access the service in your localhost, port: 3000. You can use any HTTP client to
 GET http://localhost:3000/foods/ID
 ```
 
-2. List all the foods available in the system
+2. List all the foods in the system
 
 ```python
 GET http://localhost:3000/foods
-```# Foods API
-
-HTTP Rest JSON API to manage foods. Build with Ruby + Ruby on Rails + Postgres + Redis + ElasticSearch + Docker
-
-## Requirements
-
-Docker Engine and Docker-Compose 
-
-## Installation
-
-Deploy the application: 
-
-```bash
-docker-compose build
-docker-compose up -d
-```
-Stop all the service containers:
-
-```bash
-docker-compose stop
 ```
 
-Remove all stopped service containers:
-
-
-```bash
-docker-compose rm
-```
-
-## Usage
-
-Access the service in your localhost, port: 3000. You can use any HTTP client to make the following requests: 
-
-1. Fetch a single food from the system, given the food ID:
-
-```python
-GET http://localhost:3000/foods/ID
-```
-
-2. List all the 
-
-3. Search for foods in the system given a query string. This allows you to filter foods by name and category. 
+3. Search for foods in the system given a query string. This allows you to filter foods by name and category.
 
 ```python
 GET http://localhost:3000/foods/search?name="some_name"&category=category_id
@@ -93,7 +54,7 @@ GET http://localhost:3000/foods/search?name="some_name"&category=category_id
 ```python
 POST http://localhost:3000/foods
 
-Example body (JSON): 
+Example body (JSON):
 
 {
     "name": "some_name",
@@ -111,19 +72,19 @@ Example body (JSON):
 }
 ```
 
-5. Update a food in the system given the food ID. Each field can be updated individually. 
+5. Update a food in the system given the food ID. Each field can be updated individually.
 
 ```python
 PUT http://localhost:3000/foods/ID
 
-Example body 1: 
+Example body 1:
 
 {
     "name": "some_name",
-    
+
 }
 
-Example body 2: 
+Example body 2:
 
 {
     "name": "some_name",

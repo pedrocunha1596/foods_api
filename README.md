@@ -29,15 +29,15 @@ docker-compose rm
 
 ## Usage
 
-Access the service in your localhost, port: 3000. You can use any HTTP client to make the following requests:
+Access the service in your machine (localhost), port: 3000. You can use any HTTP client to make the following requests:
 
-1. Fetch a single food from the system, given the food ID:
+1. Fetch a single food from the system, given the food ID.
 
 ```python
 GET http://localhost:3000/foods/ID
 ```
 
-2. List all the foods in the system
+2. List all the foods in the system.
 
 ```python
 GET http://localhost:3000/foods
@@ -49,7 +49,7 @@ GET http://localhost:3000/foods
 GET http://localhost:3000/foods/search?name="some_name"&category=category_id
 ```
 
-4. Create a food in the system. For a successful request, all the fields must match the following example:
+4. Create a food in the system. For a successful request, all the fields must match the following example.
 
 ```python
 POST http://localhost:3000/foods
@@ -102,7 +102,7 @@ Example body 2:
 
 ```
 
-6. Delete a food from the system given the food ID
+6. Delete a food from the system given the food ID.
 
 ```python
 DELETE http://localhost:3000/foods/ID
